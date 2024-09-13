@@ -7,10 +7,14 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface KJScanViewController : UIViewController
+
+@property (nonatomic, strong) UITableView *table;
+@property (nonatomic, strong) NSMutableArray *dataArr;
+@property (nonatomic, strong) UIActivityIndicatorView *loadingView;
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
-NS_ASSUME_NONNULL_END

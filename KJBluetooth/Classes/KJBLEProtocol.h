@@ -7,10 +7,9 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface KJBLEProtocol : NSObject
 
-@end
++ (NSString *)protocolWithConfigDeviceWiFi:(NSString *)ssid password:(NSString *)password token:(NSString *)token requestID:(NSInteger)requestID;
++ (NSString *)protocolWithScanNearAPsWithRequestID:(NSInteger)requestID;
 
-NS_ASSUME_NONNULL_END
+@end

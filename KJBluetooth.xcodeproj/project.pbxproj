@@ -17,6 +17,11 @@
 		68BC396B2C93B82F0085A403 /* KJBluetoothTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC396A2C93B82F0085A403 /* KJBluetoothTests.m */; };
 		68BC39752C93B82F0085A403 /* KJBluetoothUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC39742C93B82F0085A403 /* KJBluetoothUITests.m */; };
 		68BC39772C93B82F0085A403 /* KJBluetoothUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC39762C93B82F0085A403 /* KJBluetoothUITestsLaunchTests.m */; };
+		68BC39862C93B8A70085A403 /* KJBLEProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC39852C93B8A70085A403 /* KJBLEProtocol.m */; };
+		68BC39892C93BA040085A403 /* KJBLEConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC39882C93BA040085A403 /* KJBLEConfigManager.m */; };
+		68BC398C2C93BCE80085A403 /* KJPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC398B2C93BCE80085A403 /* KJPeripheralManager.m */; };
+		68C16F992C940C7200BFEBB0 /* KJScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C16F982C940C7200BFEBB0 /* KJScanViewController.m */; };
+		68C16F9C2C940C9D00BFEBB0 /* KJBLEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C16F9B2C940C9D00BFEBB0 /* KJBLEViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,16 @@
 		68BC39702C93B82F0085A403 /* KJBluetoothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KJBluetoothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BC39742C93B82F0085A403 /* KJBluetoothUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJBluetoothUITests.m; sourceTree = "<group>"; };
 		68BC39762C93B82F0085A403 /* KJBluetoothUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJBluetoothUITestsLaunchTests.m; sourceTree = "<group>"; };
+		68BC39842C93B8A70085A403 /* KJBLEProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJBLEProtocol.h; sourceTree = "<group>"; };
+		68BC39852C93B8A70085A403 /* KJBLEProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJBLEProtocol.m; sourceTree = "<group>"; };
+		68BC39872C93BA040085A403 /* KJBLEConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJBLEConfigManager.h; sourceTree = "<group>"; };
+		68BC39882C93BA040085A403 /* KJBLEConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJBLEConfigManager.m; sourceTree = "<group>"; };
+		68BC398A2C93BCE80085A403 /* KJPeripheralManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJPeripheralManager.h; sourceTree = "<group>"; };
+		68BC398B2C93BCE80085A403 /* KJPeripheralManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJPeripheralManager.m; sourceTree = "<group>"; };
+		68C16F972C940C7200BFEBB0 /* KJScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJScanViewController.h; sourceTree = "<group>"; };
+		68C16F982C940C7200BFEBB0 /* KJScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJScanViewController.m; sourceTree = "<group>"; };
+		68C16F9A2C940C9D00BFEBB0 /* KJBLEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJBLEViewController.h; sourceTree = "<group>"; };
+		68C16F9B2C940C9D00BFEBB0 /* KJBLEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJBLEViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +119,17 @@
 		68BC394D2C93B82A0085A403 /* KJBluetooth */ = {
 			isa = PBXGroup;
 			children = (
+				68BC39832C93B8630085A403 /* Classes */,
 				68BC394E2C93B82A0085A403 /* AppDelegate.h */,
 				68BC394F2C93B82A0085A403 /* AppDelegate.m */,
 				68BC39512C93B82A0085A403 /* SceneDelegate.h */,
 				68BC39522C93B82A0085A403 /* SceneDelegate.m */,
 				68BC39542C93B82A0085A403 /* ViewController.h */,
 				68BC39552C93B82A0085A403 /* ViewController.m */,
+				68C16F972C940C7200BFEBB0 /* KJScanViewController.h */,
+				68C16F982C940C7200BFEBB0 /* KJScanViewController.m */,
+				68C16F9A2C940C9D00BFEBB0 /* KJBLEViewController.h */,
+				68C16F9B2C940C9D00BFEBB0 /* KJBLEViewController.m */,
 				68BC39572C93B82A0085A403 /* Main.storyboard */,
 				68BC395A2C93B82E0085A403 /* Assets.xcassets */,
 				68BC395C2C93B82E0085A403 /* LaunchScreen.storyboard */,
@@ -134,6 +154,19 @@
 				68BC39762C93B82F0085A403 /* KJBluetoothUITestsLaunchTests.m */,
 			);
 			path = KJBluetoothUITests;
+			sourceTree = "<group>";
+		};
+		68BC39832C93B8630085A403 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				68BC39842C93B8A70085A403 /* KJBLEProtocol.h */,
+				68BC39852C93B8A70085A403 /* KJBLEProtocol.m */,
+				68BC39872C93BA040085A403 /* KJBLEConfigManager.h */,
+				68BC39882C93BA040085A403 /* KJBLEConfigManager.m */,
+				68BC398A2C93BCE80085A403 /* KJPeripheralManager.h */,
+				68BC398B2C93BCE80085A403 /* KJPeripheralManager.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +301,12 @@
 			files = (
 				68BC39562C93B82A0085A403 /* ViewController.m in Sources */,
 				68BC39502C93B82A0085A403 /* AppDelegate.m in Sources */,
+				68C16F992C940C7200BFEBB0 /* KJScanViewController.m in Sources */,
+				68BC39892C93BA040085A403 /* KJBLEConfigManager.m in Sources */,
+				68BC39862C93B8A70085A403 /* KJBLEProtocol.m in Sources */,
+				68BC398C2C93BCE80085A403 /* KJPeripheralManager.m in Sources */,
 				68BC39612C93B82E0085A403 /* main.m in Sources */,
+				68C16F9C2C940C9D00BFEBB0 /* KJBLEViewController.m in Sources */,
 				68BC39532C93B82A0085A403 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +483,8 @@
 				DEVELOPMENT_TEAM = 6T2VWAK6CR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KJBluetooth/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "The app needs to turn on bluetooth, otherwise the device cannot be added in the way of bluetooth";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Request Bluetooth Usage";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -472,6 +512,8 @@
 				DEVELOPMENT_TEAM = 6T2VWAK6CR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KJBluetooth/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "The app needs to turn on bluetooth, otherwise the device cannot be added in the way of bluetooth";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Request Bluetooth Usage";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -7,10 +7,23 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
+extern NSString *const kKJBLEConfigManagerStateChangedNotification;
+
+@class CBPeripheral;
+@class CBCentralManager;
+
+typedef void(^KJBLEConfigManagerDiscoverPeripheralBlock)(CBPeripheral *peripheral,NSDictionary<NSString *, id> *advertisement, NSNumber *RSSI);
+typedef void(^KJBLEConfigManagerPeripheralStateChangedBlock)(CBPeripheral *peripheral, NSError *error);
 
 @interface KJBLEConfigManager : NSObject
+//中心管理者
+@property (nonatomic, strong) CBCentralManager *centralManager;
+
+@property (nonatomic, strong) KJBLEConfigManagerDiscoverPeripheralBlock discoverPeripheralBlock;
+@property (nonatomic, strong) KJBLEConfigManagerPeripheralStateChangedBlock peripheralStateChangedBlock;
+
++ (KJBLEConfigManager *)manager;
+
+- (void)setupBlueTool;
 
 @end
-
-NS_ASSUME_NONNULL_END
